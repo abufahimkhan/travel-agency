@@ -1,0 +1,41 @@
+import React from "react";
+import service from "../../jsonData/service.json";
+
+export default function ServiceCard() {
+  // Calculate the maximum number of cards to show based on the desired row count
+  const maxCards = 4 * 2; // 4 columns * 2 rows
+
+  return (
+    <div className="flex flex-wrap justify-center mt-5 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {service.slice(0, maxCards).map((service) => (
+          <a
+            href="#"
+            className="bg-white border-solid border-3 border-black-500 block rounded-lg p-3 shadow-sm shadow-indigo-100"
+            key={service.id}
+          >
+            <img
+              alt=""
+              src={service.image}
+              className="h-56 w-full rounded-md object-cover border-solid border-1 border-black-500"
+            />
+            <div className="p-0 mt-5">
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h2>
+              <p className="text-sm text-gray-600 mb-3">{service.description}</p>
+            </div>
+            <button className="service-more ml-0 px-2 py-2 border border-gray-500 rounded-2xl text-xs font-semibold text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 transition duration-300 ease-in-out">
+              See More
+            </button>
+          </a>
+        ))}
+      </div>
+
+      {/* View More button */}
+      <div className="mt-2 mx-auto">
+        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none">
+          View More
+        </button>
+      </div>
+    </div>
+  );
+}

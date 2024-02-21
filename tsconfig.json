@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es5",                    /* Specify ECMAScript target version */
+      "module": "commonjs",               /* Specify module system */
+      "strict": true,                     /* Enable all strict type-checking options */
+      "jsx": "react",                     /* Specify JSX mode (if using React) */
+      "esModuleInterop": true,            /* Enables emit interoperability between CommonJS and ES Modules */
+      "skipLibCheck": true,               /* Skip type checking of all declaration files */
+      "forceConsistentCasingInFileNames": true /* Ensure consistent casing in filenames */
+    },
+    "include": [
+      "src/**/*.tsx",                    /* Include TypeScript files */
+      "src/**/*.ts"                      /* Include TypeScript files */
+    ],
+    "exclude": [
+      "node_modules"                     /* Exclude node_modules directory */
+    ]
+  }
+  
