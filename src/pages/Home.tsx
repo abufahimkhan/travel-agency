@@ -10,7 +10,7 @@ import TestimonialSlider from '../components/CommonSection/TestimonialsSection';
 
 export default function Home() {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-150 min-h-screen">
       <MenuBar />
       <div className="container mx-auto px-4 py-8">
         <BannerSection />

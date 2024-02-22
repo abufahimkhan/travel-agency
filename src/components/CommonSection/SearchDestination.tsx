@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SearchDestination() {
   return (
-    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <div className="relative isolate overflow-hidden bg-white px-6 py-20 text-center sm:px-16 sm:shadow-sm dark:bg-transparent">
         <div className="mx-auto max-w-3xl text-center">
       <h1

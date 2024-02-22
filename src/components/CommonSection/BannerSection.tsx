@@ -5,7 +5,7 @@ import plane from "../../assets/plane.png";
 
 export default function BannerSection() {
   return (
-    <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <section className="section-cover relative">
         {/* Only show the plane image on larger screens */}
         <img

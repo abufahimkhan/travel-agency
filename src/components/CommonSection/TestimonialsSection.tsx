@@ -3,7 +3,7 @@ import React from 'react'
 export default function TestimonialsSection() {
   return (
     <section>
-    <div className="flex flex-wrap justify-center mt-5 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-10">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <div className="md:flex md:items-end md:justify-between">
       <div className="max-w-xl">
         <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">

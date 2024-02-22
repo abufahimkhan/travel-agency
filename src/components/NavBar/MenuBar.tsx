@@ -10,7 +10,7 @@ export default function MenuBar() {
 
   return (
     <header>
-     <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-10">
+     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-15 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
             <div className="text-center sm:text-left">
