@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
+// import logo from "../../assets/logo.png";
 
 export default function MenuBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,12 +11,14 @@ export default function MenuBar() {
 
   return (
     <header>
-     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-15 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
-            <div className="text-center sm:text-left">
+            <div className="text-center sm:text-left ml-5">
               <h1 className="font-mono text-1xl mr-5  font-bold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 sm:text-3xl">
-                Travel Around
+                <Link to="/" className="text-white">
+                  Travel Around
+                </Link>
               </h1>
 
               <p className="hidden md:block mt-1.5 text-sm text-gray-500">
@@ -24,112 +27,71 @@ export default function MenuBar() {
             </div>
           </div>
 
-
           <div className="hidden md:block">
             <nav aria-label="Global">
               <ul className="flex items-center gap-8 text-sm">
                 <li>
-                  <a
+                  <Link
+                    to="/"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                    href="#"
                   >
-                    {" "}
-                    About{" "}
-                  </a>
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="/travels"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                    href="#"
                   >
-                    {" "}
-                    Careers{" "}
-                  </a>
+                    Travels
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="/destinations"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                    href="#"
                   >
-                    {" "}
-                    History{" "}
-                  </a>
+                    Destinations
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="/services"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                    href="#"
                   >
-                    {" "}
-                    Services{" "}
-                  </a>
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="/about"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                    href="#"
                   >
-                    {" "}
-                    Projects{" "}
-                  </a>
+                    About Us
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="/contact"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                    href="#"
                   >
-                    {" "}
-                    Blog{" "}
-                  </a>
+                    Contact Us
+                  </Link>
                 </li>
-                <div className="flex items-center">
-                  <div className="flex space-x-1">
-                    <input
-                      type="text"
-                      className="block w-full px-2 py-1 text-blue-500 bg-white border rounded-full focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                      placeholder="Search..."
-                    />
-                    <button className="px-4 text-white bg-slate-500 rounded-full transition-all duration-200 transform hover:scale-105 active:scale-50">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
               </ul>
             </nav>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 mr-5">
             <div className="sm:flex sm:gap-4">
-              <a
+              <Link
+                to="/register"
                 className="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 transition-all duration-200 transform hover:scale-105 active:scale-50"
-                href="#"
               >
-                <span className="block rounded-full px-6 py-1 text-sm font-medium group-hover:bg-transparent">
+                <span className="block rounded-full px-5 py-1 text-sm font-medium group-hover:bg-transparent">
                   Register
                 </span>
-              </a>
-
-              {/* <div className="hidden sm:flex">
-                <a
-                  className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-black-600 transition duration-300 ease-in-out hover:scale-110"
-                  href="#"
-                >
-                  Register
-                </a>
-              </div> */}
+              </Link>
             </div>
 
             <div className="block md:hidden" onClick={toggleMenu}>
@@ -159,80 +121,72 @@ export default function MenuBar() {
 
       {/* Collapsible Menu */}
       {menuOpen && (
- <div className="md:hidden bg-white w-full absolute top-16 left-0 z-50">
-            <nav aria-label="Mobile Global" className="p-4">
+        <div className="md:hidden bg-white w-full absolute top-16 left-0 z-50">
+          <nav aria-label="Mobile Global" className="p-4">
             <ul className="flex flex-col items-start gap-4 text-sm">
               <li>
-                <a
+                <Link
+                  to="/"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                  href="#"
                 >
-                  {" "}
-                  About{" "}
-                </a>
+                  Home
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/travels"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                  href="#"
                 >
-                  {" "}
-                  Careers{" "}
-                </a>
+                  Travels
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/destinations"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                  href="#"
                 >
-                  {" "}
-                  History{" "}
-                </a>
+                  Destinations
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/services"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                  href="#"
                 >
-                  {" "}
-                  Services{" "}
-                </a>
+                  Services
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/about"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                  href="#"
                 >
-                  {" "}
-                  Projects{" "}
-                </a>
+                  About Us
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/contact"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                  href="#"
                 >
-                  {" "}
-                  Blog{" "}
-                </a>
+                  Contact Us
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/login"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                  href="#"
                 >
-                  {" "}
-                  Login{" "}
-                </a>
+                  Login
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/register"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                  href="#"
                 >
-                  {" "}
-                  Register{" "}
-                </a>
+                  Register
+                </Link>
               </li>
             </ul>
           </nav>
