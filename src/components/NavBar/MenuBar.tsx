@@ -1,7 +1,6 @@
 import React, { useState } from "react";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-// import logo from "../../assets/logo.png";
-
 export default function MenuBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,9 +15,7 @@ export default function MenuBar() {
           <div className="md:flex md:items-center md:gap-12">
             <div className="text-center sm:text-left ml-5">
               <h1 className="font-mono text-1xl mr-5  font-bold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 sm:text-3xl">
-                <Link to="/" className="text-white">
-                  Travel Around
-                </Link>
+                Travel Around
               </h1>
 
               <p className="hidden md:block mt-1.5 text-sm text-gray-500">
@@ -35,7 +32,8 @@ export default function MenuBar() {
                     to="/"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                   >
-                    Home
+                    {" "}
+                    Home{" "}
                   </Link>
                 </li>
                 <li>
@@ -43,15 +41,17 @@ export default function MenuBar() {
                     to="/travels"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                   >
-                    Travels
+                    {" "}
+                    Travels{" "}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/destinations"
+                    to="/"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                   >
-                    Destinations
+                    {" "}
+                    Destinations{" "}
                   </Link>
                 </li>
                 <li>
@@ -59,7 +59,8 @@ export default function MenuBar() {
                     to="/services"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                   >
-                    Services
+                    {" "}
+                    Services{" "}
                   </Link>
                 </li>
                 <li>
@@ -67,7 +68,8 @@ export default function MenuBar() {
                     to="/about"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                   >
-                    About Us
+                    {" "}
+                    About Us{" "}
                   </Link>
                 </li>
                 <li>
@@ -75,23 +77,65 @@ export default function MenuBar() {
                     to="/contact"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                   >
-                    Contact Us
+                    {" "}
+                    Contact Us{" "}
                   </Link>
                 </li>
+                <div className="flex items-center">
+                  <div className="flex space-x-1">
+                    <input
+                      type="text"
+                      className="block w-full px-2 py-1 text-blue-500 bg-white border rounded-full focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                      placeholder="Search..."
+                    />
+                    <button className="px-4 text-white bg-slate-500 rounded-full transition-all duration-200 transform hover:scale-105 active:scale-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </ul>
             </nav>
           </div>
 
           <div className="flex items-center gap-4 mr-5">
-            <div className="sm:flex sm:gap-4">
-              <Link
-                to="/register"
-                className="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 transition-all duration-200 transform hover:scale-105 active:scale-50"
-              >
-                <span className="block rounded-full px-5 py-1 text-sm font-medium group-hover:bg-transparent">
+            <div className="sm:flex sm:gap-4 relative z-50">
+              <div className="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 transition-all duration-200 transform hover:scale-105 ">
+                <button
+                  className="block rounded-full px-5 py-1 text-sm font-medium group-hover:bg-transparent"
+                  onClick={toggleMenu}
+                >
                   Register
-                </span>
-              </Link>
+                </button>
+                {/* Dropdown Menu */}
+                {menuOpen && (
+                  <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg z-50">
+                    <Link
+                      to="/login"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    >
+                      Login
+                    </Link>
+                    <Link
+                      to="/signup"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    >
+                      Signup
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
 
             <div className="block md:hidden" onClick={toggleMenu}>
@@ -129,7 +173,8 @@ export default function MenuBar() {
                   to="/"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                 >
-                  Home
+                  {" "}
+                  Home{" "}
                 </Link>
               </li>
               <li>
@@ -137,15 +182,17 @@ export default function MenuBar() {
                   to="/travels"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                 >
-                  Travels
+                  {" "}
+                  Travels{" "}
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/destinations"
+                  to="/"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                 >
-                  Destinations
+                  {" "}
+                  Destinations{" "}
                 </Link>
               </li>
               <li>
@@ -153,15 +200,17 @@ export default function MenuBar() {
                   to="/services"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                 >
-                  Services
+                  {" "}
+                  Services{" "}
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/about"
+                  to="/"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                 >
-                  About Us
+                  {" "}
+                  About Us{" "}
                 </Link>
               </li>
               <li>
@@ -169,23 +218,17 @@ export default function MenuBar() {
                   to="/contact"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                 >
-                  Contact Us
+                  {" "}
+                  Contact Us{" "}
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/login"
+                  to="/"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
                 >
-                  Login
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/register"
-                  className="text-gray-500 font-semibold transition hover:text-gray-500/75"
-                >
-                  Register
+                  {" "}
+                  Register{" "}
                 </Link>
               </li>
             </ul>
