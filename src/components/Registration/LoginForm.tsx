@@ -1,113 +1,142 @@
-import React from 'react'
+import React from "react";
 
 export default function LoginForm() {
   return (
-    <div>{/*
-    Heads up! 👋
-  
-    Plugins:
-      - @tailwindcss/forms
-  */}
-  
-  <section className="relative flex flex-wrap lg:h-screen lg:items-center">
-    <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-lg text-center">
-        <h1 className="text-2xl font-bold sm:text-3xl">Get started today!</h1>
-  
-        <p className="mt-4 text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla eaque error neque
-          ipsa culpa autem, at itaque nostrum!
+    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-5 lg:px-8">
+      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+        <h2 className="text-center text-3xl font-extrabold text-gray-900">
+          Sign in to your account or
+        </h2>
+        <p className="mt-2  text-center text-lg text-gray-600 max-w">
+          <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+            login now
+          </a>
         </p>
       </div>
-  
-      <form action="#" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
-        <div>
-          <label htmlFor="email" className="sr-only">Email</label>
-  
-          <div className="relative">
-            <input
-              type="email"
-              className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-              placeholder="Enter email"
-            />
-  
-            <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 text-gray-400"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          <form className="space-y-6" action="#" method="POST">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Email address
+              </label>
+              <div className="mt-1">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  required
+                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  placeholder="Enter your email address"
                 />
-              </svg>
-            </span>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Password
+              </label>
+
+              <div className="mt-1">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autoComplete="current-password"
+                  required
+                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  placeholder="Enter new password"
+                />
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <input
+                  id="remember_me"
+                  name="remember_me"
+                  type="checkbox"
+                  className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                />
+                <label className="ml-2 block text-sm text-gray-900">
+                  Remember me
+                </label>
+              </div>
+
+              <div className="text-sm">
+                <a
+                  href="#"
+                  className="font-medium text-blue-600 hover:text-blue-500"
+                >
+                  Forgot your password?
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Sign up
+              </button>
+            </div>
+          </form>
+          <div className="mt-6">
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-gray-300"></div>
+              </div>
+              <div className="relative flex justify-center text-sm">
+                <span className="px-2 bg-gray-100 text-gray-500">
+                  Or continue with
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-6 grid grid-cols-3 gap-3">
+              <div>
+                <a
+                  href="#"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <img
+                    className="h-5 w-5"
+                    src="https://www.svgrepo.com/show/512120/facebook-176.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <img
+                    className="h-5 w-5"
+                    src="https://www.svgrepo.com/show/513008/twitter-154.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <img
+                    className="h-6 w-6"
+                    src="https://www.svgrepo.com/show/506498/google.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-  
-        <div>
-          <label htmlFor="password" className="sr-only">Password</label>
-  
-          <div className="relative">
-            <input
-              type="password"
-              className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-              placeholder="Enter password"
-            />
-  
-            <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 text-gray-400"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-  
-        <div className="flex items-center justify-between">
-          <p className="text-sm text-gray-500">
-            No account?
-            <a className="underline" href="#">Sign up</a>
-          </p>
-  
-          <button
-            type="submit"
-            className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
-          >
-            Sign in
-          </button>
-        </div>
-      </form>
+      </div>
     </div>
-  
-    <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
-      <img
-        alt=""
-        src="https://images.unsplash.com/photo-1630450202872-e0829c9d6172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-        className="absolute inset-0 h-full w-full object-cover"
-      />
-    </div>
-  </section></div>
-  )
+  );
 }
