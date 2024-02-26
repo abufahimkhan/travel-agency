@@ -25,7 +25,7 @@ export default function PlaceCard() {
                 <div>
                   <dd className="text-sm text-gray-500">{props.rating}</dd>
                 </div>
-                <div className="mt-3 flex items-center gap-5 text-xs">
+                <div className="mt-3 flex items-center gap-6 text-sm">
                   <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
                     🗺️
                     <div className="mt-1.5 sm:mt-0">
@@ -47,15 +47,16 @@ export default function PlaceCard() {
             <div className="mt-3">
               <dl>
                 <div className="mt-3 flex items-center gap-5 text-xs">
-                  <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-                    🏙️
+                <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+                  🏨
                     <div className="mt-1.5 sm:mt-0">
-                      <p className="text-gray-500">Hotel INCity</p>
+                      <p className="text-gray-500">Hotel</p>
                       <p className="font-medium">{props.hotel.name}</p>
                     </div>
                   </div>
+                  
                   <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-                    🏙️
+                  💵
                     <div className="mt-1.5 sm:mt-0">
                       <p className="text-gray-500">Price</p>
                       <p className="font-medium">{props.hotel.price}</p>
