@@ -14,14 +14,7 @@ export default function SignupForm() {
             />
 
             <div className="hidden lg:relative lg:block lg:p-12">
-              <a className="block text-white" href="#">
-              
-                <h1 className="font-mono text-1xl font-bold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 sm:text-3xl">
-                Travel Around
-              </h1>
-              </a>
-
-              <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+              <h2 className="mt-1 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
                 Welcome toTravel Around  ✈️ 
               </h2>
 

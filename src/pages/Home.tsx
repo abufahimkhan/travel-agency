@@ -10,19 +10,27 @@ import TestimonialSlider from '../components/CommonSection/TestimonialsSection';
 
 export default function Home() {
   return (
-    
-    <div className="bg-gray-150 min-h-screen">
+    <div className="bg-zinc-100 min-h-screen">
       <div className="container mx-auto px-4 py-8">
         <BannerSection />
       </div>
-      <SearchDestination />
+      {/* <div className="container mx-auto px-4 py-8">
+        <hr className="border-t border-gray-300 my-8" />
+        <SearchDestination />
+        <hr className="border-t border-gray-300 my-8" />
+      </div> */}
       <div className="container mx-auto px-4 py-8">
         <PlaceCard />
+        <hr className="border-t border-gray-300 my-8" />
       </div>
       <div className="container mx-auto px-4 py-8">
         <ServiceCard />
+        <hr className="border-t border-gray-300 my-8" />
       </div>
-      <TestimonialSlider />
+      <div className="container mx-auto px-4 py-8">
+        <TestimonialSlider />
+        <hr className="border-t border-gray-300 my-8" />
+      </div>
       <Footer />
     </div>
   );

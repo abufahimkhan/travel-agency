@@ -9,12 +9,12 @@ export default function MenuBar() {
   };
 
   return (
-    <header>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-15 items-center justify-between">
+    <header className="bg-zinc-100 p-5">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className="flex h-15 items-center justify-between ">
           <div className="md:flex md:items-center md:gap-12">
             <div className="text-center sm:text-left ml-5">
-              <h1 className="font-mono text-1xl mr-5  font-bold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 sm:text-3xl">
+            <h1 className="font-mono text-1xl mr-5  font-bold bg-gradient-to-r sm:text-3x1  text-transparent text-3xl bg-clip-text from-purple-400 to-pink-600">
                 Travel Around
               </h1>
 
@@ -26,7 +26,7 @@ export default function MenuBar() {
 
           <div className="hidden md:block">
             <nav aria-label="Global">
-              <ul className="flex items-center gap-8 text-sm">
+              <ul className="flex items-center gap-10 text-sm">
                 <li>
                   <Link
                     to="/"
@@ -109,7 +109,7 @@ export default function MenuBar() {
             </nav>
           </div>
 
-          <div className="flex items-center gap-4 mr-5">
+          <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4 relative z-50">
               <div className="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 transition-all duration-200 transform hover:scale-105 ">
                 <button

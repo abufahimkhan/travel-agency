@@ -14,17 +14,15 @@ export default function BannerSection() {
         />
         <section className="section-cover-container flex p-0">
           <section className="w-full sm:w-1/2 m-1">
-            <h1 className="text-3xl sm:text-6xl font-normal text-gray-600">
+            <h1 className="text-3xl sm:text-5xl font-normal text-gray-600">
               Plan easy, Pay less
             </h1>
-            <h1 className="text-3xl sm:text-6xl font-normal text-gray-600">
+            <h1 className="text-3xl sm:text-5xl font-normal text-gray-600">
               and Experience more
             </h1>
-            <p className="text-lg text-gray-600 mt-4">
-              Unleash the possibilities of enchanting
-              <br />
+            <p className="text-lg sm:text-2xl text-gray-600 mt-8 mb-8 break-words">
+              Unleash the possibilities of enchanting 
               destinations, ensuring your holiday is wrapped in
-              <br />
               comfort and convenience.
             </p>
             {/* <button className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full mt-4">

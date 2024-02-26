@@ -7,6 +7,7 @@ export default function ServiceCard() {
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-center tracking-tight text-gray-500 text-5xl font-bold mb-8">Our Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {service.slice(0, maxCards).map((service) => (
           <a
@@ -31,11 +32,11 @@ export default function ServiceCard() {
       </div>
 
       {/* View More button */}
-      <div className="mt-2 mx-auto">
+      {/* <div className="mt-5 flex justify-center">
         <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none">
           View More
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
