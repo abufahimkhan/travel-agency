@@ -74,7 +74,7 @@ export default function PlaceCard() {
             {/* Read More button */}
             <div className="mt-3 flex justify-center">
               <a
-                className="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring w-full text-center rounded-b-lg"
+                className="group relative inline-block overflow-hidden border  px-8 py-3 focus:outline-none focus:ring w-full text-center rounded-b-lg"
                 href="#"
               >
                 <span className="absolute inset-y-0 left-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
