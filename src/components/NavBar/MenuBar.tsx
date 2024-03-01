@@ -13,15 +13,15 @@ export default function MenuBar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex h-15 items-center justify-between ">
           <div className="md:flex md:items-center md:gap-12">
-            <div className="text-center sm:text-left ml-5">
-            <h1 className="font-mono text-1xl mr-5  font-bold bg-gradient-to-r sm:text-3x1  text-transparent text-3xl bg-clip-text from-purple-400 to-pink-600">
-                Travel Around
-              </h1>
+          <div className="text-center sm:text-left ml-5">
+  <h1 className="font-mono text-1xl mr-5 sm:text-3xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-purple-400 to-pink-600">
+    <span className="text-1xl sm:text-3xl">Travel Around</span>
+  </h1>
+  <p className="hidden md:block mt-1.5 text-sm text-gray-500">
+    Make Your Journey Spectacular ✈️ 🎉
+  </p>
+</div>
 
-              <p className="hidden md:block mt-1.5 text-sm text-gray-500">
-                Make Your Journey Spectacular ✈️ 🎉
-              </p>
-            </div>
           </div>
 
           <div className="hidden md:block">

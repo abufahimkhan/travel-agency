@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-      "target": "es5",                    /* Specify ECMAScript target version */
+      "target": "es5",
+      "lib": ["es2015", "dom"],                    /* Specify ECMAScript target version */
       "module": "commonjs",               /* Specify module system */
       "strict": true,                     /* Enable all strict type-checking options */
       "jsx": "react",                     /* Specify JSX mode (if using React) */

@@ -24,7 +24,7 @@ export default function ServiceCard() {
               <h2 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h2>
               <p className="text-sm text-gray-600 mb-3">{service.description}</p>
             </div>
-            <button className="px-3 py-1.5 text-white bg-slate-400 rounded-full transition-all duration-200 transform hover:scale-105 active:scale-50">
+            <button className="px-3 py-1.5 text-gray-600 text-1xl bg-none border-2 rounded-full transition-all duration-200 transform hover:scale-105 ">
                       See More
                     </button>
           </a>

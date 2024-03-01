@@ -25,7 +25,7 @@ export default function PlaceCard() {
                 <div>
                   <dd className="text-sm text-gray-500">{props.rating}</dd>
                 </div>
-                <div className="mt-3 flex items-center gap-6 text-sm">
+                <div className="mt-3 flex items-center gap-7 text-sm">
                   <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
                     🗺️
                     <div className="mt-1.5 sm:mt-0">
