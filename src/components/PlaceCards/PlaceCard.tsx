@@ -1,6 +1,6 @@
 import React from "react";
 import pcards from "../../jsonData/records.json";
-
+import { Link } from 'react-router-dom';
 export default function PlaceCard() {
   // Calculate the maximum number of cards to show based on the desired row count
   const maxCards = 4 * 2; // 4 columns * 2 rows
@@ -74,16 +74,16 @@ export default function PlaceCard() {
 
             {/* Read More button */}
             <div className="mt-3 flex justify-center">
-              <a
+              <div
                 className="group relative inline-block overflow-hidden border  px-8 py-3 focus:outline-none focus:ring w-full text-center rounded-b-lg"
                 href="#"
               >
                 <span className="absolute inset-y-0 left-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
 
-                <span className="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
+                <Link to="/booking" className="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
                   Book Now
-                </span>
-              </a>
+                </Link>
+              </div>
             </div>
           </div>
         ))}

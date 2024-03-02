@@ -1,6 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 export default function SignupForm() {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (password !== confirmPassword) {
+      setError("Passwords do not match");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await axios.post("http://localhost:5000/signup", {
+        firstName,
+        lastName,
+        email,
+        password,
+      });
+
+      console.log("User added successfully:", response.data);
+      // Optionally, you can redirect the user to a different page after successful signup
+    } catch (error) {
+      setError("Error adding user: " + error.message);
+      console.error("Error adding user:", error.message);
+      // Handle error, e.g., display an error message to the user
+    }
+
+    setLoading(false);
+  };
+
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-5 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -16,7 +54,7 @@ export default function SignupForm() {
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          <form className="space-y-6" action="#" method="POST">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="flex space-x-4">
               <div className="w-1/2">
                 <label className="block text-sm font-medium text-gray-700">
@@ -29,6 +67,8 @@ export default function SignupForm() {
                     type="text"
                     autoComplete="given-name"
                     required
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                     className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                     placeholder="Enter your first name"
                   />
@@ -45,6 +85,8 @@ export default function SignupForm() {
                     type="text"
                     autoComplete="family-name"
                     required
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                     className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                     placeholder="Enter your last name"
                   />
@@ -62,6 +104,8 @@ export default function SignupForm() {
                   type="email"
                   autoComplete="email"
                   required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Enter your email address"
                 />
@@ -69,15 +113,14 @@ export default function SignupForm() {
             </div>
 
             <div>
-            
               <label className="block text-sm font-medium text-gray-700">
                 Password
               </label>
               <div className="text-xs">
-                        <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
-                           Use 8 digit long,Capital, small letters and  digits
-                        </a>
-                    </div>
+                <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+                  Use 8 digit long, Capital, small letters and digits
+                </a>
+              </div>
               <div className="mt-1">
                 <input
                   id="password"
@@ -85,6 +128,8 @@ export default function SignupForm() {
                   type="password"
                   autoComplete="current-password"
                   required
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Enter new password"
                 />
@@ -96,28 +141,28 @@ export default function SignupForm() {
               </label>
               <div className="mt-1">
                 <input
-                  id="password"
-                  name="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
                   type="password"
                   autoComplete="current-password"
                   required
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                   className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Confirm new password"
                 />
               </div>
             </div>
 
-            <div className="flex items-center justify-between">
-              Implementing reCAPTCHA
-
-            </div>
+            {error && <p className="text-red-500">{error}</p>}
 
             <div>
               <button
                 type="submit"
+                disabled={loading}
                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-                Sign up
+                {loading ? "Signing up..." : "Sign up"}
               </button>
             </div>
           </form>

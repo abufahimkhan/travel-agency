@@ -12,7 +12,7 @@
     "include": [
       "src/**/*.tsx",                    /* Include TypeScript files */
       "src/**/*.ts"                      /* Include TypeScript files */
-    ],
+, "src/api/server.js"    ],
     "exclude": [
       "node_modules"                     /* Exclude node_modules directory */
     ]

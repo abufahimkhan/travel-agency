@@ -8,7 +8,7 @@ import Layout from "./pages/Layout"
 import Footer from './components/FooterSection/Footer';
 import SignupForm from  './components/Registration/SignupForm';
 import LoginForm from  './components/Registration/LoginForm';
-
+import Booking from  './components/PlaceCards/Booking';
 export default function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/contact" element={<Footer />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/signup" element={<SignupForm/>} />
+        <Route path="/booking" element={<Booking/>} />
       </Routes>
       </Layout>
     </Router>
