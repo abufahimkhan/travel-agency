@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+
 export default function MenuBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -8,20 +8,23 @@ export default function MenuBar() {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="bg-zinc-100 p-5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex h-15 items-center justify-between ">
           <div className="md:flex md:items-center md:gap-12">
-          <div className="text-center sm:text-left ml-5">
-  <h1 className="font-mono text-1xl mr-5 sm:text-3xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-purple-400 to-pink-600">
-    <span className="text-1xl sm:text-3xl">Travel Around</span>
-  </h1>
-  <p className="hidden md:block mt-1.5 text-sm text-gray-500">
-    Make Your Journey Spectacular ✈️ 🎉
-  </p>
-</div>
-
+            <div className="text-center sm:text-left ml-5">
+              <h1 className="font-mono text-1xl mr-5 sm:text-3xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-purple-400 to-pink-600">
+                <span className="text-1xl sm:text-3xl">Travel Around</span>
+              </h1>
+              <p className="hidden md:block mt-1.5 text-sm text-gray-500">
+                Make Your Journey Spectacular ✈️ 🎉
+              </p>
+            </div>
           </div>
 
           <div className="hidden md:block">
@@ -31,6 +34,7 @@ export default function MenuBar() {
                   <Link
                     to="/"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                    onClick={closeMenu}
                   >
                     {" "}
                     Home{" "}
@@ -40,6 +44,7 @@ export default function MenuBar() {
                   <Link
                     to="/travels"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                    onClick={closeMenu}
                   >
                     {" "}
                     Travels{" "}
@@ -47,8 +52,9 @@ export default function MenuBar() {
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/destinations"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                    onClick={closeMenu}
                   >
                     {" "}
                     Destinations{" "}
@@ -58,6 +64,7 @@ export default function MenuBar() {
                   <Link
                     to="/services"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                    onClick={closeMenu}
                   >
                     {" "}
                     Services{" "}
@@ -67,6 +74,7 @@ export default function MenuBar() {
                   <Link
                     to="/about"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                    onClick={closeMenu}
                   >
                     {" "}
                     About Us{" "}
@@ -76,6 +84,7 @@ export default function MenuBar() {
                   <Link
                     to="/contact"
                     className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                    onClick={closeMenu}
                   >
                     {" "}
                     Contact Us{" "}
@@ -118,18 +127,19 @@ export default function MenuBar() {
                 >
                   Register
                 </button>
-                {/* Dropdown Menu */}
                 {menuOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg z-50">
                     <Link
                       to="/login"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      onClick={closeMenu}
                     >
                       Login
                     </Link>
                     <Link
                       to="/signup"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      onClick={closeMenu}
                     >
                       Signup
                     </Link>
@@ -163,7 +173,6 @@ export default function MenuBar() {
         </div>
       </div>
 
-      {/* Collapsible Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white w-full absolute top-16 left-0 z-50">
           <nav aria-label="Mobile Global" className="p-4">
@@ -172,6 +181,7 @@ export default function MenuBar() {
                 <Link
                   to="/"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                  onClick={closeMenu}
                 >
                   {" "}
                   Home{" "}
@@ -181,6 +191,7 @@ export default function MenuBar() {
                 <Link
                   to="/travels"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                  onClick={closeMenu}
                 >
                   {" "}
                   Travels{" "}
@@ -188,8 +199,9 @@ export default function MenuBar() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  to="/destinations"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                  onClick={closeMenu}
                 >
                   {" "}
                   Destinations{" "}
@@ -199,6 +211,7 @@ export default function MenuBar() {
                 <Link
                   to="/services"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                  onClick={closeMenu}
                 >
                   {" "}
                   Services{" "}
@@ -206,8 +219,9 @@ export default function MenuBar() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  to="/about"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                  onClick={closeMenu}
                 >
                   {" "}
                   About Us{" "}
@@ -217,6 +231,7 @@ export default function MenuBar() {
                 <Link
                   to="/contact"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                  onClick={closeMenu}
                 >
                   {" "}
                   Contact Us{" "}
@@ -224,8 +239,9 @@ export default function MenuBar() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  to="/register"
                   className="text-gray-500 font-semibold transition hover:text-gray-500/75"
+                  onClick={closeMenu}
                 >
                   {" "}
                   Register{" "}
