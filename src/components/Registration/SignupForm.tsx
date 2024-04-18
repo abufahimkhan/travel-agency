@@ -25,7 +25,7 @@ export default function SignupForm() {
 
     try {
       const response = await axios.post(
-        "https://travel-agency-tlbx.onrender.com/signup",
+        "https://travel-agency-lpz3.onrender.com/signup",
         {
           firstName,
           lastName,

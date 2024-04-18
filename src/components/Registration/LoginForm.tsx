@@ -17,7 +17,7 @@ export default function LoginForm() {
 
     try {
       const response = await axios.post(
-        "https://travel-agency-tlbx.onrender.com/login",
+        "https://travel-agency-lpz3.onrender.com/login",
         {
           email,
           password,
