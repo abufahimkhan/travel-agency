@@ -182,7 +182,7 @@ const Pricing: React.FC = () => {
               </h2>
 
               <p className="text-sm mt-2 text-gray-700">
-                Embark on thrilling adventures with our Adventure Seeker plan.
+                Embark on thrilling adventures with our Adventure plan.
               </p>
 
               <p className="mt-2 sm:mt-4">
@@ -349,13 +349,13 @@ const Pricing: React.FC = () => {
               </h2>
 
               <p className="text-sm mt-2 text-gray-700">
-                Tailored for corporate travelers seeking luxury and convenience.
+                For corporate travelers seeking luxury and convenience.
               </p>
 
               <p className="mt-2 sm:mt-4">
                 <strong className="text-2xl font-bold text-gray-900 sm:text-2xl">
                   {" "}
-                  $150{" "}
+                  ৳3500{" "}
                 </strong>
 
                 <span className="text-sm font-medium text-gray-700">
