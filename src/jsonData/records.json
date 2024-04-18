@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "country": "France",
+    "city": "Paris",
+    "image": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900",
+    "rating": "4.5",
+    "description": "Discover the iconic Eiffel Tower and explore the romantic streets of Paris.",
+    "seeMoreButton": "Explore Paris",
+    "hotel": {
+      "name": "Hotel Le Meurice",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 2,
+    "country": "Italy",
+    "city": "Rome",
+    "image": "https://www.state.gov/wp-content/uploads/2019/04/shutterstock_720444505v2-2208x1406-1.jpg",
+    "rating": "4.3",
+    "description": "Experience the ancient wonders of Rome and indulge in delicious Italian cuisine.",
+    "seeMoreButton": "Discover Rome",
+    "hotel": {
+      "name": "Hotel de Russie",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 3,
+    "country": "Japan",
+    "city": "Tokyo",
+    "image": "https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg",
+    "rating": "4.7",
+    "description": "Immerse yourself in the vibrant culture of Tokyo and explore its bustling streets.",
+    "seeMoreButton": "Experience Tokyo",
+    "hotel": {
+      "name": "Park Hyatt Tokyo",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 4,
+    "country": "USA",
+    "city": "New York",
+    "image": "https://www.scholarshipregion.com/wp-content/uploads/2023/10/statue-liberty-usa.jpg",
+    "rating": "4.6",
+    "description": "Visit the Statue of Liberty and take a stroll through the vibrant neighborhoods of New York City.",
+    "seeMoreButton": "Visit New York",
+    "hotel": {
+      "name": "The Plaza Hotel",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 5,
+    "country": "Australia",
+    "city": "Sydney",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/191011110307-02-australia-beautiful-places.jpg?q=w_2187,h_1230,x_0,y_0,c_fill/h_618",
+    "rating": "4.4",
+    "description": "Explore the stunning Sydney Opera House and relax on the beautiful beaches of Sydney.",
+    "seeMoreButton": "Explore Sydney",
+    "hotel": {
+      "name": "Park Hyatt Sydney",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 6,
+    "country": "Spain",
+    "city": "Barcelona",
+    "image": "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1656628171v2-2107x1406.jpg",
+    "rating": "4.8",
+    "description": "Discover the architectural wonders of Barcelona and savor authentic Spanish cuisine.",
+    "seeMoreButton": "Discover Barcelona",
+    "hotel": {
+      "name": "Hotel Arts Barcelona",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 7,
+    "country": "Thailand",
+    "city": "Bangkok",
+    "image": "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg",
+    "rating": "4.2",
+    "description": "Experience the vibrant street life and rich culture of Bangkok.",
+    "seeMoreButton": "Experience Bangkok",
+    "hotel": {
+      "name": "Mandarin Oriental, Bangkok",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 8,
+    "country": "Canada",
+    "city": "Vancouver",
+    "image": "https://i.natgeofe.com/k/e2ffc795-8b1f-4479-8c95-b6497e5ca4f2/canada-vancouver.jpg?w=1084.125&h=609",
+    "rating":"4.5",
+    "description": "Visit the picturesque city of Vancouver and explore its stunning natural beauty.",
+    "seeMoreButton": "Visit Vancouver",
+    "hotel": {
+      "name": "Fairmont Pacific Rim",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 9,
+    "country": "Brazil",
+    "city": "Rio de Janeiro",
+    "image": "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/brazil-famous-for.jpg",
+    "rating": "4.6",
+    "description": "Explore the lively streets of Rio de Janeiro and enjoy its famous beaches.",
+    "seeMoreButton": "Explore Rio",
+    "hotel": {
+      "name": "Belmond Copacabana Palace",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 10,
+    "country": "Greece",
+    "city": "Athens",
+    "image": "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1168009126v2.jpg",
+    "rating": "4.3",
+    "description": "Discover the ancient history and iconic landmarks of Athens.",
+    "seeMoreButton": "Discover Athens",
+    "hotel": {
+      "name": "Hotel Grande Bretagne, a Luxury Collection Hotel",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 11,
+    "country": "India",
+    "city": "Mumbai",
+    "image": "https://i.natgeofe.com/k/42e832f5-fd48-43ff-b338-091bdf4048ca/india-tajmahal_16x9.jpg?w=1200",
+    "rating": "4.4",
+    "description": "Experience the bustling city life and rich cultural heritage of Mumbai.",
+    "seeMoreButton": "Experience Mumbai",
+    "hotel": {
+      "name": "The Oberoi Mumbai",
+      "price": "$$$"
+    }
+  },
+  {
+    "id": 12,
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "image": "https://i.natgeofe.com/k/42e832f5-fd48-43ff-b338-091bdf4048ca/india-tajmahal_16x9.jpg?w=1200",
+    "rating": "4.1",
+    "description": "Experience the vibrant culture and bustling streets of Dhaka.",
+    "seeMoreButton": "Experience Bangladesh",
+    "hotel": {
+      "name": "Pan Pacific Sonargaon Dhaka",
+      "price": "$$$"
+    }
+  }
+]
