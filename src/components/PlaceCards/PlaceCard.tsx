@@ -74,7 +74,7 @@ const PlaceCard: React.FC = () => {
                   </div>
 
                   <div>
-                    <dd className="mt-3 text-xs text-gray-500">
+                    <dd className="mt-3 text-xs text-gray-400">
                       {props.description}
                     </dd>
                   </div>
@@ -88,7 +88,7 @@ const PlaceCard: React.FC = () => {
 
                   <Link
                     to="/booking"
-                    className="relative text-xs font-medium text-indigo-600 transition-colors group-hover:text-white"
+                    className="relative text-xs font-bold text-indigo-600 transition-colors group-hover:text-white"
                   >
                     Book Now
                   </Link>

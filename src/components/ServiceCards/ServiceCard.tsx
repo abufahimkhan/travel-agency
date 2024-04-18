@@ -23,14 +23,14 @@ export default function ServiceCard() {
               className="h-56 w-full rounded-md object-cover border-solid border-1 border-black-500"
             />
             <div className="p-0 mt-5">
-              <h2 className="text-l font-semibold text-gray-800 mb-2">
+              <h2 className="text-l font-semibold text-gray-500 mb-2">
                 {service.title}
               </h2>
-              <p className="text-xs text-gray-600 mb-3">
+              <p className="text-xs text-gray-400 mb-3">
                 {service.description}
               </p>
             </div>
-            <button className="px-3 py-1.5 text-gray-600 text-xs bg-none border-2 rounded-full transition-all duration-200 transform hover:scale-105 ">
+            <button className="px-3 py-1.5 text-gray-500 font-bold text-xs bg-none border-2 rounded-full transition-all duration-200 transform hover:scale-105 ">
               See More
             </button>
           </a>

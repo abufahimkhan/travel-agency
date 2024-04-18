@@ -23,7 +23,7 @@ const BannerSection: React.FC<BannerSectionProps> = () => {
             <h1 className="text-3xl sm:text-4xl font-normal text-gray-600">
               and Experience more
             </h1>
-            <p className="text-lg sm:text-1xl text-gray-600 mt-8 mb-8 break-words">
+            <p className="text-lg sm:text-1xl text-gray-500 mt-8 mb-8 break-words">
               Unleash the possibilities of enchanting destinations, ensuring
               your holiday is wrapped in comfort and convenience.
             </p>

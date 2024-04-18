@@ -11,22 +11,22 @@ const Pricing: React.FC = () => {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8p-28 pt-1  md:gap-8">
           <div className="divide-y divide-gray-200 rounded-2xl bg-white border-solid border-3 border-black-500 block p-4 shadow-sm shadow-indigo-100 transition-all duration-200 transform hover:scale-105 active:scale-40 relative">
             <div className="p-6 sm:px-8">
-              <h2 className="text-md font-medium text-gray-900">
+              <h2 className="text-md font-medium text-gray-600">
                 Basic Package
                 <span className="sr-only">Plan</span>
               </h2>
 
-              <p className="text-sm mt-2 text-gray-700">
+              <p className="text-sm mt-2 text-gray-500">
                 Explore Bangladesh with our Basic Package.
               </p>
 
               <p className="mt-2 sm:mt-4">
-                <strong className="text-2xl font-bold text-gray-900 sm:text-2xl">
+                <strong className="text-2xl font-bold text-gray-600 sm:text-2xl">
                   {" "}
                   ৳1000{" "}
                 </strong>
 
-                <span className="text-sm font-medium text-gray-700">
+                <span className="text-sm font-medium text-gray-500">
                   /person
                 </span>
               </p>
@@ -40,7 +40,7 @@ const Pricing: React.FC = () => {
             </div>
 
             <div className="p-6 sm:px-8">
-              <p className="text-md font-medium text-gray-900 sm:text-md">
+              <p className="text-md font-medium text-gray-600 sm:text-md">
                 What's included:
               </p>
 
@@ -61,7 +61,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                   <span className="text-sm text-gray-700">
+                   <span className="text-sm text-gray-500">
                     {" "}
                     Transportation included{" "}
                   </span>
@@ -83,7 +83,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Accommodation for 2 nights{" "}
                   </span>
@@ -105,7 +105,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700"> Guided tours </span>
+                                    <span className="text-sm text-gray-500"> Guided tours </span>
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -124,7 +124,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700"> Meals not included </span>
+                                    <span className="text-sm text-gray-500"> Meals not included </span>
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -143,7 +143,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Entry fees not included{" "}
                   </span>
@@ -165,7 +165,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Personal expenses not included{" "}
                   </span>
@@ -176,22 +176,22 @@ const Pricing: React.FC = () => {
 
           <div className="divide-y divide-gray-200 rounded-2xl bg-white border-solid border-3 border-black-500 block p-4 shadow-sm shadow-indigo-100 transition-all duration-200 transform hover:scale-105 active:scale-40 relative">
             <div className="p-6 sm:px-8">
-              <h2 className="text-md font-medium text-gray-900">
+              <h2 className="text-md font-medium text-gray-600">
                 Adventure Seeker
                 <span className="sr-only">Plan</span>
               </h2>
 
-              <p className="text-sm mt-2 text-gray-700">
+              <p className="text-sm mt-2 text-gray-500">
                 Embark on thrilling adventures with our Adventure plan.
               </p>
 
               <p className="mt-2 sm:mt-4">
-                <strong className="text-2xl font-bold text-gray-900 sm:text-2xl">
+                <strong className="text-2xl font-bold text-gray-600 sm:text-2xl">
                   {" "}
                   ৳2000{" "}
                 </strong>
 
-                <span className="text-sm font-medium text-gray-700">
+                <span className="text-sm font-medium text-gray-500">
                   /month
                 </span>
               </p>
@@ -205,7 +205,7 @@ const Pricing: React.FC = () => {
             </div>
 
             <div className="p-6 sm:px-8">
-              <p className="text-md font-medium text-gray-900 sm:text-md">
+              <p className="text-md font-medium text-gray-600 sm:text-md">
                 What's included:
               </p>
 
@@ -226,7 +226,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Unlimited adventure trips{" "}
                   </span>
@@ -248,7 +248,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Personalized tour guide{" "}
                   </span>
@@ -270,7 +270,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Photography sessions included{" "}
                   </span>
@@ -292,7 +292,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700"> Deluxe accommodations </span>
+                                    <span className="text-sm text-gray-500"> Deluxe accommodations </span>
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -311,7 +311,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Meals and snacks included{" "}
                   </span>
@@ -333,7 +333,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Adventure gear rental included{" "}
                   </span>
@@ -343,22 +343,22 @@ const Pricing: React.FC = () => {
           </div>
           <div className="divide-y divide-gray-300 rounded-2xl bg-white border-solid border-3 border-black-500 block p-4 shadow-sm shadow-indigo-100 transition-all duration-200 transform hover:scale-105 active:scale-40 relative">
             <div className="p-6 sm:px-8">
-              <h2 className="text-md font-medium text-gray-900">
+              <h2 className="text-md font-medium text-gray-600">
                 Corporate Explorer
                 <span className="sr-only">Plan</span>
               </h2>
 
-              <p className="text-sm mt-2 text-gray-700">
+              <p className="text-sm mt-2 text-gray-500">
                 For corporate travelers seeking luxury and convenience.
               </p>
 
               <p className="mt-2 sm:mt-4">
-                <strong className="text-2xl font-bold text-gray-900 sm:text-2xl">
+                <strong className="text-2xl font-bold text-gray-600 sm:text-2xl">
                   {" "}
                   ৳3500{" "}
                 </strong>
 
-                <span className="text-sm font-medium text-gray-700">
+                <span className="text-sm font-medium text-gray-500">
                   /month
                 </span>
               </p>
@@ -372,7 +372,7 @@ const Pricing: React.FC = () => {
             </div>
 
             <div className="p-6 sm:px-8">
-              <p className="text-md font-medium text-gray-900 sm:text-md">
+              <p className="text-md font-medium text-gray-600 sm:text-md">
                 What's included:
               </p>
 
@@ -393,7 +393,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Priority booking for 100 users{" "}
                   </span>
@@ -415,7 +415,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Dedicated corporate travel specialist{" "}
                   </span>
@@ -437,7 +437,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Access to corporate travel discounts{" "}
                   </span>
@@ -459,7 +459,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     24/7 corporate travel support{" "}
                   </span>
@@ -480,7 +480,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Meals and snacks included{" "}
                   </span>
@@ -501,7 +501,7 @@ const Pricing: React.FC = () => {
                     />
                   </svg>
 
-                                    <span className="text-sm text-gray-700">
+                                    <span className="text-sm text-gray-500">
                     {" "}
                     Access to exclusive corporate travel events{" "}
                   </span>
